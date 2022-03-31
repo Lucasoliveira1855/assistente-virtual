@@ -3,7 +3,7 @@ import pyttsx3
 
 audio = sr.Recognizer()
 maquina = pyttsx3.init()
-maquina.say('Ola, eu sou a Elisabeth')
+maquina.say('Ola, eu sou a Elisa')
 maquina.say('Como posso ajudar-lo?')
 maquina.runAndWait()
 
@@ -13,7 +13,7 @@ try:
         voz = audio.listen(source)
         comando = audio.recognize_google(voz, language='pt-BR')
         comando = comando.lower()
-        if 'Elisabeth' in comando:
+        if 'Elisa' in comando:
             print(comando)
 
 except:
